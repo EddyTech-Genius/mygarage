@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-page{
+    height: 100vh;
+    background-color: rgb(250,247,255);
+}
+
+/* Nanbar */
+nav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(134,133,239);
+  img {
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 55px;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+    li {
+      a {
+        text-decoration: none;
+        color: rgb(250,247,255);
+      }
+    }
+  }
+}
+
+.hero__main {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .left__aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    img {
+      height: 350px;
+    }
+  }
+  .right__aside {
+    padding: 10px;
+    h1 {
+        font-family: 'Leckerli One';
+        font-size: 50px;
+        max-width: 400px;
+        line-height: 60px;
+        margin-bottom: 60px;
+        color: rgb(134,133,239);
+    }
+    p {
+        font-family: 'Poppins';
+        font-size: 14px;
+        max-width: 500px;
+        line-height: 20px;
+        margin-top: -30px;
+    }
+    button {
+        border: none;
+        color: white;
+        background-color: rgb(134,133,239);
+        margin-top: 25px;
+        font-size: 16px;
+        padding: 15px 150px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 5px grey;
+    }
+  }
+}

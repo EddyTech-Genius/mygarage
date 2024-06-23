@@ -1,5 +1,5 @@
-primary-grey: D9D9D9;
-purple: 8685EF;
-somehow-white: FAF7FF;
-secondary-grey: BEBBCE;
+primary-grey: rgb(217,217,217);
+purple: rgb(134,133,239);
+somehow-white: rgb(250,247,255);
+secondary-grey: rgb(190,187,206);
 black: 000000;

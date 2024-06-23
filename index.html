@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <link
       rel="stylesheet"
@@ -26,8 +26,14 @@
     <main>
       <section class="hero-page">
         <header>
-          <img src="images/logo.png" alt="check internet..." />
           <nav>
+            <div class="header__logo">
+              <img
+                src="images/logo.png"
+                alt="check internet..."
+                class="header__image"
+              />
+            </div>
             <ul>
               <li><a href="">Home</a></li>
               <li><a href="">About</a></li>
@@ -39,18 +45,20 @@
             </ul>
           </nav>
         </header>
-        <aside class="right__aside">
-          <h1>Welcome To Eddy’s Garage</h1>
-          <p>
-            Rev Up Your Ride with Our Ultimate Car Destination! Explore the
-            Thrill of Speed, Luxury, and Performance. From Classic Beauties to
-            Cutting-Edge Innovations, Discover Your Dream Drive Today!
-          </p>
-          <button>Let’s Go</button>
-        </aside>
-        <aside class="left__aside">
-          <img src="images/right image.png" alt="" />
-        </aside>
+        <div class="hero__main">
+          <aside class="right__aside">
+            <h1>Welcome To Eddy’s Garage</h1>
+            <p>
+              Rev Up Your Ride with Our Ultimate Car Destination! Explore the
+              Thrill of Speed, Luxury, and Performance. From Classic Beauties to
+              Cutting-Edge Innovations, Discover Your Dream Drive Today!
+            </p>
+            <button>Let’s Go</button>
+          </aside>
+          <aside class="left__aside">
+            <img src="images/right image.png" alt="" />
+          </aside>
+        </div>
       </section>
 
       <section class="about__page">
@@ -246,7 +254,6 @@
         </div>
         <button>Send Message</button>
       </section>
-
     </main>
   </body>
 </html>
