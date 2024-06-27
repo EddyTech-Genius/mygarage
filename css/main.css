@@ -182,9 +182,55 @@ nav {
 
 .about__footer{
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   gap: 50px;
+  border-top: 2px solid rgb(0, 0, 0);
+  width: 100%;
   i{
     font-size: 20px;
   }
 }
+
+
+.sign-up-page{
+  background-color: rgb(134,133,239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  padding: 35px;
+  img{
+    position: relative;
+    height: 650px;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    margin-top: 200px;
+  }
+  h2{
+    position: absolute;
+    color: white;
+    margin-top: 100px;
+  }
+  input:not(input[type=checkbox]){
+    padding : 12px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    background-color:  rgb(217,217,217);
+  }
+  .checkbox__container{
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+
