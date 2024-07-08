@@ -1,99 +1,109 @@
+/* Global Styles */
+/* * {
+  outline: 1px solid green;
+} */
+
 body {
   margin: 0;
   padding: 0;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
+/* Hero Page */
 .hero-page {
   height: 100vh;
   background-color: rgb(250, 247, 255);
 }
 
-/* Nanbar */
+/* Navbar */
 nav {
   display: flex;
-  padding: 10px;
+  padding: 0.625rem; /* 10px to rem */
   align-items: center;
   justify-content: center;
   background-color: rgb(134, 133, 239);
-  img {
-    height: 50px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-  }
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 55px;
-    /* justify-content: space-between; */
-    /* background-color: red; */
-    li {
-      a {
-        text-decoration: none;
-        color: rgb(250, 247, 255);
-      }
-    }
-  }
 }
 
+nav img {
+  height: 3.125rem; /* 50px to rem */
+  position: absolute;
+  left: 0.625rem; /* 10px to rem */
+  top: 0.625rem; /* 10px to rem */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3.4375rem; /* 55px to rem */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(250, 247, 255);
+}
+
+/* Hero Main */
 .hero__main {
-  margin-top: 50px;
+  margin-top: 3.125rem; /* 50px to rem */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-around; */
-  .left__aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    img {
-      height: 350px;
-      position: relative;
-    }
-    img::before {
-      content: "fish";
-      background-color: blue;
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-  .right__aside {
-    padding: 10px;
-    h1 {
-      font-family: "Leckerli One";
-      font-size: 50px;
-      max-width: 400px;
-      line-height: 60px;
-      margin-bottom: 60px;
-      color: rgb(134, 133, 239);
-    }
-    p {
-      font-family: "Poppins";
-      font-size: 14px;
-      max-width: 500px;
-      line-height: 20px;
-      margin-top: -30px;
-    }
-    button {
-      border: none;
-      color: white;
-      background-color: rgb(134, 133, 239);
-      margin-top: 25px;
-      font-size: 16px;
-      padding: 15px 150px;
-      border-radius: 10px;
-      box-shadow: 5px 5px 10px 5px grey;
-    }
-  }
 }
 
+.hero__main .left__aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 0.625rem; /* 20px 10px to rem */
+}
+
+.hero__main .left__aside img {
+  height: 21.875rem; /* 350px to rem */
+  position: relative;
+}
+
+.hero__main .left__aside img::before {
+  content: "fish";
+  background-color: blue;
+  width: 6.25rem; /* 100px to rem */
+  height: 6.25rem; /* 100px to rem */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__main .right__aside {
+  padding: 0.625rem; /* 10px to rem */
+}
+
+.hero__main .right__aside h1 {
+  font-family: "Leckerli One";
+  font-size: 3.125rem; /* 50px to rem */
+  max-width: 25rem; /* 400px to rem */
+  line-height: 3.75rem; /* 60px to rem */
+  margin-bottom: 3.75rem; /* 60px to rem */
+  color: rgb(134, 133, 239);
+}
+
+.hero__main .right__aside p {
+  font-family: "Poppins";
+  font-size: 0.875rem; /* 14px to rem */
+  max-width: 31.25rem; /* 500px to rem */
+  line-height: 1.25rem; /* 20px to rem */
+  margin-top: -1.875rem; /* -30px to rem */
+}
+
+.hero__main .right__aside button {
+  border: none;
+  color: white;
+  background-color: rgb(134, 133, 239);
+  margin-top: 1.5625rem; /* 25px to rem */
+  font-size: 1rem; /* 16px to rem */
+  padding: 0.9375rem 9.375rem; /* 15px 150px to rem */
+  border-radius: 0.625rem; /* 10px to rem */
+  box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem grey; /* 5px 5px 10px 5px to rem */
+}
+
+/* About Page */
 .about__page {
   display: flex;
   align-items: center;
@@ -101,136 +111,244 @@ nav {
   flex-direction: column;
   font-family: "Mochiy Pop One";
   background-color: rgb(250, 247, 255);
-  .about-intro-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    .one {
-      max-width: 300px;
-      margin-right: 30px;
-      color: rgb(134, 133, 239);
-    }
-    .two {
-      max-width: 300px;
-    }
-    .two__one {
-      margin-bottom: 50px;
-      color: rgb(190, 187, 206);
-    }
-  }
-  .long-image {
-    height: 100px;
-    width: 100%;
-  }
-  .about__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .box-one {
-      background-color: rgb(134, 133, 239);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      gap: 50px;
-      .reliant__text{
-        max-width: 400px;
-      }
-      img {
-        height: 200px;
-      }
-    }
-    .box-two{
-      background-color: rgb(250, 247, 255);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      gap: 50px;
-      .unique__text{
-        max-width: 700px;
-      }
-      img {
-        height: 200px;
-      }
-    }
-    .box-three{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      position: relative;
-      .creative__text{
-        text-align: center;
-        max-width: 500px;
-        z-index: 2;
-      }
-      img{
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-      }
-    }
-    .ending__text{
-      text-align: center;
-      padding: 50px;
-    }
-  }
 }
 
-.about__footer{
+.about__page .about-intro-text {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 50px;
-  border-top: 2px solid rgb(0, 0, 0);
-  width: 100%;
-  i{
-    font-size: 20px;
-  }
+  justify-content: space-around;
 }
 
+.about__page .about-intro-text .one {
+  max-width: 18.75rem; /* 300px to rem */
+  margin-right: 1.875rem; /* 30px to rem */
+  color: rgb(134, 133, 239);
+}
 
-.sign-up-page{
-  background-color: rgb(134,133,239);
+.about__page .about-intro-text .two {
+  max-width: 18.75rem; /* 300px to rem */
+}
+
+.about__page .about-intro-text .two__one {
+  margin-bottom: 3.125rem; /* 50px to rem */
+  color: rgb(190, 187, 206);
+}
+
+.about__page .long-image {
+  height: 6.25rem; /* 100px to rem */
+  width: 100%;
+}
+
+.about__page .about__body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  gap: 10px;
-  padding: 35px;
-  img{
-    position: relative;
-    height: 650px;
-  }
-  .inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    position: absolute;
-    margin-top: 200px;
-  }
-  h2{
-    position: absolute;
-    color: white;
-    margin-top: 100px;
-  }
-  input:not(input[type=checkbox]){
-    padding : 12px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-    background-color:  rgb(217,217,217);
-  }
-  .checkbox__container{
-    color: white;
-    margin-top: 20px;
-  }
+  justify-content: center;
 }
 
+.about__page .about__body .box-one {
+  background-color: rgb(134, 133, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3.125rem; /* 50px to rem */
+}
 
+.about__page .about__body .box-one .reliant__text {
+  max-width: 25rem; /* 400px to rem */
+}
+
+.about__page .about__body .box-one img {
+  height: 12.5rem; /* 200px to rem */
+}
+
+.about__page .about__body .box-two {
+  background-color: rgb(250, 247, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3.125rem; /* 50px to rem */
+}
+
+.about__page .about__body .box-two .unique__text {
+  max-width: 43.75rem; /* 700px to rem */
+}
+
+.about__page .about__body .box-two img {
+  height: 12.5rem; /* 200px to rem */
+}
+
+.about__page .about__body .box-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.about__page .about__body .box-three .creative__text {
+  text-align: center;
+  max-width: 31.25rem; /* 500px to rem */
+  z-index: 2;
+}
+
+.about__page .about__body .box-three img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.about__page .about__body .ending__text {
+  text-align: center;
+  padding: 3.125rem; /* 50px to rem */
+}
+
+/* About Footer */
+.about__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem; /* 20px to rem */
+  gap: 3.125rem; /* 50px to rem */
+  border-top: 0.125rem solid rgb(0, 0, 0); /* 2px to rem */
+  width: 100%;
+}
+
+.about__footer i {
+  font-size: 1.25rem; /* 20px to rem */
+}
+
+/* Sign-Up Page */
+.sign-up-page {
+  background-color: rgb(134, 133, 239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem; /* 10px to rem */
+  padding: 2.1875rem; /* 35px to rem */
+}
+
+.sign-up-page img {
+  position: relative;
+  height: 40.625rem; /* 650px to rem */
+}
+
+.sign-up-page .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem; /* 20px to rem */
+  position: absolute;
+  margin-top: 12.5rem; /* 200px to rem */
+}
+
+.sign-up-page h2 {
+  position: absolute;
+  color: white;
+  margin-top: 6.25rem; /* 100px to rem */
+}
+
+.sign-up-page input:not([type="checkbox"]) {
+  padding: 0.75rem; /* 12px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  border: none;
+  width: 18.75rem; /* 300px to rem */
+  background-color: rgb(217, 217, 217);
+}
+
+.sign-up-page .checkbox__container {
+  color: white;
+  margin-top: 1.25rem; /* 20px to rem */
+}
+
+/* Service Page */
+.service__page {
+  padding: 6.25rem; /* 100px to rem */
+}
+
+.service__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px to rem */
+  place-content: center;
+  grid-gap: 1.25rem; /* 20px to rem */
+}
+
+/* Cards */
+.card {
+  margin: 0.625rem; /* 10px to rem */
+  height: 18.75rem; /* 300px to rem */
+  width: 18.75rem; /* 300px to rem */
+  background-color: white;
+  box-shadow: 0.25rem 0.3125rem 0.5625rem 0px rgb(1, 1, 1); /* 4px 5px 9px to rem */
+  border-radius: 0.625rem; /* 10px to rem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__one img,
+.card__two img,
+.card__three img,
+.card__four img,
+.card__five img,
+.card__six img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+/* Contact Page */
+.contact__page {
+  background-image: url("contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Mochiy Pop One";
+  padding: 100px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact__page .contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.contact__page .contact__wrapper h1 {
+  color: rgb(134, 133, 239);
+}
+
+.contact__page .contact__wrapper .contact__box {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(217, 217, 217);
+  padding: 25px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.contact__page .contact__wrapper .contact__box .input__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact__page .contact__wrapper .contact__box .input__area input,
+.contact__page .contact__wrapper .contact__box .input__area textarea {
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.contact__page .contact__wrapper .contact__box .input__area textarea {
+  background-color: rgb(134, 133, 239);
+}
